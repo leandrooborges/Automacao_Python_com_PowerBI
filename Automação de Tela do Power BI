@@ -6,7 +6,6 @@ inicioExpediente = 7 #cria variável que será utilizada como condição 1 para 
 fimExpediente = 17 #cria variável que será utilizada como condição 2 para que o código rode ou não
 hora = datetime.today().hour #cria variável que será o validador das condicionais
 
-
 while hora >= inicioExpediente and hora < fimExpediente:
     sleep(5) #Inicio
     click(x=1719, y=211, clicks=1, button='left') #Clica no ícone para expandir os modos de exibição
@@ -15,10 +14,10 @@ while hora >= inicioExpediente and hora < fimExpediente:
     moveTo(x=1919, y=480) #Esconde o cursor
     sleep(3) #Espera
 
-    click(x=228, y=814, clicks=1, button='left') #Clica no ícone de 'Notícias'
+    click(x=228, y=814, clicks=1, button='left') #Clica no ícone da primeira aba
     sleep(2) #Espera
-    click(x=986, y=23, clicks=1, button='left') #Filtra os dos
-    moveTo(x=1919, y=480) #Esconde o mouse na lateral direita
+    click(x=986, y=23, clicks=1, button='left') #Filtra os dados
+    moveTo(x=1919, y=480) #Esconde o cursor
     sleep(180) #Tempo de permanência na tela atual
 
     click(x=1799, y=28, clicks=1, button='left') #Clica para prosseguir para a próxima tela
@@ -28,17 +27,17 @@ while hora >= inicioExpediente and hora < fimExpediente:
 
     click(x=1798, y=23, clicks=1, button='left') #Clica para prosseguir para a próxima tela
     sleep(1) #Espera
-    moveTo(x=1919, y=480) #Esconde o mouse na lateral direita
+    moveTo(x=1919, y=480) #Esconde o cursor
     sleep(180) #Tempo de permanência na tela atual
 
     click(x=1803, y=21, clicks=1, button='left') #Clica para prosseguir para a próxima tela
     sleep(2) #Espera
-    moveTo(x=1919, y=480) #Esconde o mouse na lateral direita
+    moveTo(x=1919, y=480) #Esconde o cursor
     sleep(180) #Tempo de permanência na tela atual
 
-    click(x=1797, y=25) #Clica para prosseguir a próxima tela
+    click(x=1797, y=25) #Clica para prosseguir para a próxima tela
     sleep(1) #Espera
-    moveTo(x=1919, y=480) #Esconde o cursos
+    moveTo(x=1919, y=480) #Esconde o cursor
     sleep(180) #Tempo de permanência na tela atual
 
     click(x=1798, y=27, clicks=1, button='left') #Clica para prosseguir para a próxima tela
