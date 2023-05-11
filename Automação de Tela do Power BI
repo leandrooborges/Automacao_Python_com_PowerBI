@@ -1,0 +1,59 @@
+from pyautogui import click, moveTo #importa da biblioteca 'pyautogui' apenas os módulos 'click' e 'moveTo' 
+from time import sleep #importa da biblioteca 'time' apenas o módulo sleep
+from datetime import datetime, time #importa da biblioteca 'datetime' apenas os módulos 'datetime' e 'time'
+
+inicioExpediente = 7 #cria variável que será utilizada como condição 1 para que o código rode ou não
+fimExpediente = 17 #cria variável que será utilizada como condição 2 para que o código rode ou não
+hora = datetime.today().hour #cria variável que será o validador das condicionais
+
+
+while hora >= inicioExpediente and hora < fimExpediente:
+    sleep(5) #Inicio
+    click(x=1719, y=211, clicks=1, button='left') #Clica no ícone para expandir os modos de exibição
+    sleep(3) #Espera
+    click(x=1594, y=269) #Clica no ícone de tela cheia
+    moveTo(x=1919, y=480) #Esconde o cursor
+    sleep(3) #Espera
+
+    click(x=228, y=814, clicks=1, button='left') #Clica no ícone de 'Notícias'
+    sleep(2) #Espera
+    click(x=986, y=23, clicks=1, button='left') #Filtra os dos
+    moveTo(x=1919, y=480) #Esconde o mouse na lateral direita
+    sleep(180) #Tempo de permanência na tela atual
+
+    click(x=1799, y=28, clicks=1, button='left') #Clica para prosseguir para a próxima tela
+    sleep(1) #Espera
+    moveTo(x=1919, y=480) #Esconde o mouse na lateral direita
+    sleep(180) #Tempo de permanência na tela atual
+
+    click(x=1798, y=23, clicks=1, button='left') #Clica para prosseguir para a próxima tela
+    sleep(1) #Espera
+    moveTo(x=1919, y=480) #Esconde o mouse na lateral direita
+    sleep(180) #Tempo de permanência na tela atual
+
+    click(x=1803, y=21, clicks=1, button='left') #Clica para prosseguir para a próxima tela
+    sleep(2) #Espera
+    moveTo(x=1919, y=480) #Esconde o mouse na lateral direita
+    sleep(180) #Tempo de permanência na tela atual
+
+    click(x=1797, y=25) #Clica para prosseguir a próxima tela
+    sleep(1) #Espera
+    moveTo(x=1919, y=480) #Esconde o cursos
+    sleep(180) #Tempo de permanência na tela atual
+
+    click(x=1798, y=27, clicks=1, button='left') #Clica para prosseguir para a próxima tela
+    sleep(3) #Espera
+    click(x=188, y=300) #Filtra os dados
+    moveTo(x=1919, y=480) #Esconde o cursor
+    sleep(180) #Tempo de permanência na tela atual
+  
+    click(x=1756, y=24, clicks=1, button='left') #Clica para retornar a tela incial
+    sleep(3) #Espera
+    click(x=638, y=1005, clicks=1, button='left') #Clica no ícone sair de tela cheia
+    sleep(3) #Espera
+    click(x=1559, y=204, clicks=1, button='left') #Clica para restaurar filtros
+    sleep(3) #Expera
+    click(x=1005, y=663, clicks=1, button='left') #Confirma restauração dos filtros
+    sleep(3) #Espera
+    click(x=1795, y=213, clicks=1, button='left') #Clica no botao de atualizar dados
+    moveTo(x=1919, y=480) #Esconde o cursor
